@@ -1,0 +1,7 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(255, 0, 229, 0.37) 0%, #00A3FE 100%, rgba(0, 163, 254, 0.29) 100%);;
+
+}
