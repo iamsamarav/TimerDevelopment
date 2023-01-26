@@ -10,10 +10,42 @@ body{
     background: linear-gradient(180deg, rgba(255, 0, 229, 0.37) 0%, #00A3FE 100%, rgba(0, 163, 254, 0.29) 100%);
     display: grid;
     grid-template-rows: 1fr 1fr;
+   
 }
 
-.Lila{
+label {
+    font-size: 16px;
+    color: white;
+}
+
+input {
+    font-size: 16px;
+}
+
+.timer {
+    font-size: 200px;
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    margin: 2%;
+}
+
+
+.align-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group{
     grid-row: 1/2;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .Sami{
