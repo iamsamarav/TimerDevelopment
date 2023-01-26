@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,47 +10,21 @@ body{
     height: 100vh;
     background: linear-gradient(180deg, rgba(255, 0, 229, 0.37) 0%, #00A3FE 100%, rgba(0, 163, 254, 0.29) 100%);
     display: grid;
-    grid-template-rows: 1fr 1fr;
-   
+    grid-template-rows: 2fr 1fr;
 }
 
-label {
-    font-size: 16px;
-    color: white;
-}
-
-input {
-    font-size: 16px;
-}
-
-.timer {
-    font-size: 200px;
-    text-align: center;
-    color: white;
-}
-
-.input-container {
-    margin: 2%;
-}
-
-
-.align-inputs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.group{
+.Lila{
     grid-row: 1/2;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 .Sami{
     grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .btn-start{
@@ -158,4 +133,40 @@ footer{
     font-size: 25px;
     font-weight: bolder;
     margin: 5%;
+}
+
+label {
+    font-size: 16px;
+    color: white;
+}
+
+input {
+    font-size: 16px;
+}
+
+.timer {
+    font-size: 200px;
+    text-align: center;
+    color: white;
+}
+
+.input-container {
+    margin: 2%;
+}
+
+
+.align-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group{
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
