@@ -17,9 +17,9 @@ const timer = (duration, display) => {
     let timer = duration
     let hours, minutes, seconds
 
-    setInterval(() => {
+    let interval = setInterval(() => {
         hours = Math.floor((timer / 60) / 60)
-        minutes = Math.floor(timer/60)
+        minutes = Math.floor(timer/60 - (hours * 60)) 
         seconds = Math.floor(timer % 60)
 
         hours = hours < 10 ? '0' + hours : hours
@@ -32,6 +32,7 @@ const timer = (duration, display) => {
 
         if (timer < 0) {
             display.innerHTML = 'Acabou'
+            clearInterval(interval)
         }
     }, 1000)
 }}
