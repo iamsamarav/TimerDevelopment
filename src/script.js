@@ -1,4 +1,5 @@
-const btnStart = document.querySelector(".btn-start")
+window.onload=function(){
+    const btnStart = document.querySelector(".btn-start")
 
 btnStart.addEventListener('click', () => {
     const hours = document.querySelector("#hour")
@@ -16,7 +17,7 @@ const timer = (duration, display) => {
     let timer = duration
     let hours, minutes, seconds
 
-    setInterval( () => {
+    setInterval(() => {
         hours = Math.floor((timer / 60) / 60)
         minutes = Math.floor(timer/60)
         seconds = Math.floor(timer % 60)
@@ -25,7 +26,7 @@ const timer = (duration, display) => {
         minutes = minutes < 10 ? '0' + minutes : minutes
         seconds = seconds < 10? '0' + seconds : seconds
 
-        display.innerHTML = `${hours} : ${minutes} : ${seconds}`
+        display.innerHTML = `${hours}:${minutes}:${seconds}`
 
         timer -= 1
 
@@ -33,4 +34,4 @@ const timer = (duration, display) => {
             display.innerHTML = 'Acabou'
         }
     }, 1000)
-}
+}}
