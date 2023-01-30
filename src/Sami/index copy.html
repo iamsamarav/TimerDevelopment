@@ -11,52 +11,51 @@
 
 <body>
     <header>
-        <div id="box-logo">
-            <h1>Timer LS</h1>
+        <h1>Timer LS</h1>
+        <div id="buttons-header">
+            <button>+</button>
+            <button><img src="bell.png" alt=""></button>
         </div>
-        <section>
-            <button class="btn-header">+</button>
-            <button class="btn-header"><img src="bell.png" alt="Sino para ativar alarme (passar p inglês)"></button>
-        </section>
     </header>
+
     <main>
-        <div id="align-horizontal">
-            <label for="hour">Hours</label>
-            <label for="minute">Minutes</label>
-            <label for="second">Seconds</label>
-        </div>
-        <section id="container-timer">
-            <div class="input-timer">
-                <div class="progress">
+        <div id="display-background">
+            <section id="display-timer">
+                <div class="input-timer">
+                    <label for="hour">Hours</label>
                     <input type="number" name="" id="hour" value="00" max="99" min="0">
                 </div>
+                <div class="input-timer">
+                <label for="minute">Minutes</label>
+                <input type="number" name="" id="minute" value="00" max="59" min="0">
             </div>
             <div class="input-timer">
-                <div class="progress">
-                    <input type="number" name="" id="minute" value="00" max="59" min="0">
-                </div>
-            </div>
-            <div class="input-timer">
-                <div class="progress">
-                    <input type="number" name="" id="second" value="00" max="59" min="0">
-                </div>
+                <label for="second">Seconds</label>
+                <input type="number" name="" id="second" value="00" max="59" min="0">
             </div>
         </section>
+        
+        <section id="display-timer">
+            <span>00</span>
+            <span>00</span>
+            <span>00</span>
+        </section>
+    </div>
+
     </main>
+
     <footer>
-        <div id="developers">
-            <h2>Developed by</h2>
-            <div class="align-horizontal">
-                <a src="" alt=""><img src="" alt=""> <a src="" alt=""><img src="" alt="">
-            </div>
-            <div class="align-horizontal">
-                <h2>Lílyan</h2>
-                <h2>Samara</h2>
-            </div>
-        </div>
-        <button><img src="play.png" alt="Iniciar temporizador"> Start</button>
+        <section id="profiles">
+        <h2>Developed by Lílyan and Samara</h2>
+            <a href="https://www.linkedin.com/in/lilyan-guedes-9758b4208">
+                <img src="linkedin.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/samara-vit%C3%B3riaas2/">
+                <img src="linkedin.png" alt="">
+            </a>
+        </section>
+            <button><img id="img-play" src="play.png" alt=""> Start</button>
     </footer>
-    <script src="script copy.js"></script>
 </body>
 
 </html>
