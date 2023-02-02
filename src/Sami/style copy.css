@@ -6,7 +6,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-color: deeppink;
+    background-color: #34344e;
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     color: white;
@@ -23,23 +23,23 @@ header{
 
 h1{
     border: solid 0.3rem white;
-    height: 25%;
+    height: 2rem;
     border-radius: 1rem;
-    margin: 2%;
-    padding: 1%;
+    margin: 2rem;
+    padding: 1rem;
 }
 
-#buttons-header{
+header > div{
     margin: 1rem;
     display: flex;
     justify-content: center;
 }
 
-#buttons-header button{
+#add, #alarm{
     background-color: white;
     border: none;
-    height: 4vw;
-    width: 4vw;
+    height: 4rem;
+    width: 4rem;
     margin: 1rem;
     border-radius: 2rem;
     font-size: 2em;
@@ -49,11 +49,11 @@ h1{
     justify-content: center;
 }
 
-#buttons-header button:hover{
+#add:hover, #alarm:hover{
     opacity: 95%;
 }
 
-#buttons-header img{
+header img{
     width: 2rem;
 }
 
@@ -67,7 +67,7 @@ main{
     align-items: center;
 }
 
-#display-timer{
+.display-timer{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -78,12 +78,12 @@ main{
 span{
     font-size: 10rem;
     background-color: #51115caa;
-    padding: 2vw;
+    padding: 2rem;
     clip-path: circle();
 }
 
 .input-timer{
-    width: 14vw;
+    width: 14rem;
     font-size: 1.2rem;
     display: flex;
     flex-direction: column;
@@ -91,10 +91,10 @@ span{
     justify-content: center;
 }
 
-#display-background{
-    background-color: rgba(0, 39, 139, 0.337);
+main > div{
+    background-color: #89a7b1;
     border-radius: 1.5rem;
-    width: 70vw;
+    width: 60rem;
 }
 
 input{
@@ -102,7 +102,7 @@ input{
     outline: none;
     border: none;
     border-radius: 2rem;
-    padding: 5%;
+    padding: 1rem;
 }
 
 /* FOOTER */
@@ -113,7 +113,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 1vw;
+    margin: 1rem;
 }
 
 #profiles{
@@ -123,12 +123,12 @@ footer{
 }
 
 #profiles h2{
-    margin-bottom: 2vw;
+    margin-bottom: 2rem;
 }
 
 #profiles img{
-    width: 2vw;
-    margin: 1.5vw;
+    width: 2rem;
+    margin: 1.5rem;
 }
 
 label{
@@ -139,15 +139,15 @@ footer button{
     background-color: white;
     border: none;
     border-radius: 3rem;
-    width: 15vw;
+    width: 12rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1%;
+    padding: 0.5rem;
     font-size: 1.5rem;
     color: #51115C;
     font-weight: bolder;
-    margin-right: 2vw;
+    margin-right: 1rem;
 }
 
 footer button:hover{
@@ -155,6 +155,14 @@ footer button:hover{
 }
 
 #img-play{
-    width: 3vw;
-    margin-right: 1vw;
+    width: 3rem;
+    margin-right: 1rem;
+}
+
+#pause{
+    display: none;
+}
+
+#resume{
+    display: none;
 }
