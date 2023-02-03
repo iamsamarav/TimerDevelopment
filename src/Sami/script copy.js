@@ -9,8 +9,7 @@ window.onload = function () {
         const minutes = document.querySelector("#minute")
         const seconds = document.querySelector("#second")
 
-        let duration = (parseInt(hours.value) * 60 * 60) +
-            (parseInt(minutes.value) * 60) + (parseInt(seconds.value))
+        let duration = (parseInt(hours.value) * 60 * 60) +(parseInt(minutes.value) * 60) + (parseInt(seconds.value))
 
         btnStart.style.display = "none"
         btnPause.style.display = "block";
