@@ -57,8 +57,9 @@ h1{
     width: 10rem;
     margin-top: -1rem;
     margin-right: 1rem;
-    background-color: #51115C;
     display: none;
+    border: solid, 1rem, white;
+    padding: 1rem;
 }
 
 #add, #alarm{

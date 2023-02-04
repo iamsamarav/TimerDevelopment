@@ -67,7 +67,7 @@ window.onload = function () {
         let displayminutes = Math.floor( duration/ 60 - (displayhours * 60))
         let displayseconds = Math.floor( duration % 60)
 
-        const elementSaved = document.createElement('div')
+        const elementSaved = document.createElement('button')
         elementSaved.style.backgroundColor = "#34344e";
         elementSaved.innerHTML = `${displayhours} : ${displayminutes} : ${displayseconds}`
         sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
