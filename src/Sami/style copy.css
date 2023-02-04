@@ -22,6 +22,18 @@ header{
     grid-row: 1/2;
 }
 
+#saved {
+    display: none;
+    background-color: white;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    font-size: 2em;
+    color: #51115C;
+}
+
 h1{
     border: solid 0.3rem white;
     border-radius: 1rem;
@@ -49,7 +61,7 @@ h1{
     display: none;
 }
 
-#add, #alarm, #saved{
+#add, #alarm{
     background-color: white;
     border: none;
     height: 4rem;

@@ -5,6 +5,8 @@ window.onload = function () {
     const btnResume = document.getElementById('resume')
     const btnAdd = document.getElementById('add')
     const btnSaved = document.getElementById('saved')
+    const sidebar = document.getElementById('sidebar')
+
     
 
     btnStart.addEventListener('click', () => {
@@ -54,12 +56,28 @@ window.onload = function () {
     })
 
     btnAdd.addEventListener('click', () => {
+        let i = 0
         const hours = document.querySelector("#hour")
         const minutes = document.querySelector("#minute")
         const seconds = document.querySelector("#second")
 
         let duration = (parseInt(hours.value) * 60 * 60) +(parseInt(minutes.value) * 60) + (parseInt(seconds.value))
 
+        let displayhours = Math.floor((duration / 60) / 60)
+        let displayminutes = Math.floor( duration/ 60 - (displayhours * 60))
+        let displayseconds = Math.floor( duration % 60)
+
+        const elementSaved = document.createElement('div')
+        elementSaved.style.backgroundColor = "#34344e";
+        elementSaved.innerHTML = `${displayhours} : ${displayminutes} : ${displayseconds}`
+        sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
+        i++
+        btnSaved.style.display = "block";
+
+    })
+
+    btnSaved.addEventListener('click', () =>{
+        sidebar.style.display = "block"
     })
 
     class timer {
