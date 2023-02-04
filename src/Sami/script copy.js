@@ -69,6 +69,7 @@ window.onload = function () {
 
         const elementSaved = document.createElement('button')
         elementSaved.style.backgroundColor = "#34344e";
+        elementSaved.style.display = "block";
         elementSaved.innerHTML = `${displayhours} : ${displayminutes} : ${displayseconds}`
         sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
         i++
@@ -77,7 +78,11 @@ window.onload = function () {
     })
 
     btnSaved.addEventListener('click', () =>{
-        sidebar.style.display = "block"
+        sidebar.style.display = "flex"
+        sidebar.style.flexDirection = "column"
+        sidebar.style.alignItems = "center"
+        sidebar.style.justifyContent = "center"
+
     })
 
     class timer {

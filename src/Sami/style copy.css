@@ -55,11 +55,20 @@ h1{
 
 #sidebar{
     width: 10rem;
+    height: 5rem;
     margin-top: -1rem;
     margin-right: 1rem;
     display: none;
-    border: solid, 1rem, white;
+    border: solid 0.3rem white;
+    border-radius: 1rem;
     padding: 1rem;
+    overflow-y: scroll;
+    background-color: #89a7b1;
+    
+}
+
+#sidebar::-webkit-scrollbar {
+    width: 0px;
 }
 
 #add, #alarm{
