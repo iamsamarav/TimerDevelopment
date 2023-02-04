@@ -3,6 +3,9 @@ window.onload = function () {
     const btnStart = document.querySelector("#start")
     const btnPause = document.getElementById('pause')
     const btnResume = document.getElementById('resume')
+    const btnAdd = document.getElementById('add')
+    const btnSaved = document.getElementById('saved')
+    
 
     btnStart.addEventListener('click', () => {
         const hours = document.querySelector("#hour")
@@ -48,6 +51,15 @@ window.onload = function () {
         btnResume.style.display = "none"
         btnPause.style.display = "flex"
         cycle.cycleTimer(duration)
+    })
+
+    btnAdd.addEventListener('click', () => {
+        const hours = document.querySelector("#hour")
+        const minutes = document.querySelector("#minute")
+        const seconds = document.querySelector("#second")
+
+        let duration = (parseInt(hours.value) * 60 * 60) +(parseInt(minutes.value) * 60) + (parseInt(seconds.value))
+
     })
 
     class timer {

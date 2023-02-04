@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -15,7 +16,7 @@ body{
 /* HEADER */
 header{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     grid-row: 1/2;
@@ -29,13 +30,19 @@ h1{
     padding: 1rem;
 }
 
-header > div{
+#top{
     margin: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: row;
 }
 
-#add, #alarm{
+#top>div {
+    
+}
+
+#add, #alarm, #saved{
     background-color: white;
     border: none;
     height: 4rem;
@@ -49,7 +56,7 @@ header > div{
     justify-content: center;
 }
 
-#add:hover, #alarm:hover{
+#add:hover, #alarm:hover, #saved:hover{
     opacity: 95%;
 }
 
@@ -112,23 +119,21 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin: 1rem;
 }
 
 #profiles{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
-}
-
-#profiles h2{
-    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
 }
 
 #profiles img{
-    width: 2rem;
-    margin: 1.5rem;
+    width: 1.6rem;
+    margin-left: 1rem;
 }
 
 label{
