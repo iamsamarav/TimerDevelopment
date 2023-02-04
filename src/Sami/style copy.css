@@ -18,28 +18,35 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     grid-row: 1/2;
 }
 
 h1{
     border: solid 0.3rem white;
-    height: 2rem;
     border-radius: 1rem;
     margin: 2rem;
     padding: 1rem;
 }
 
 #top{
-    margin: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%;
     flex-direction: row;
 }
 
 #top>div {
-    
+    display: flex;
+    align-items: center;
+}
+
+#sidebar{
+    width: 10rem;
+    margin-top: -1rem;
+    margin-right: 1rem;
+    background-color: #51115C;
+    display: none;
 }
 
 #add, #alarm, #saved{
