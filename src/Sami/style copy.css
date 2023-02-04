@@ -28,7 +28,6 @@ header{
     border: none;
     height: 4rem;
     width: 4rem;
-    margin: 1rem;
     border-radius: 2rem;
     font-size: 2em;
     color: #51115C;
@@ -53,22 +52,29 @@ h1{
     align-items: center;
 }
 
-#sidebar{
-    width: 10rem;
-    height: 5rem;
-    margin-top: -1rem;
-    margin-right: 1rem;
+#align{
     display: none;
-    border: solid 0.3rem white;
-    border-radius: 1rem;
-    padding: 1rem;
-    overflow-y: scroll;
-    background-color: #89a7b1;
-    
+    position: relative;
+    width: 12rem;
+    justify-content: center;
+    margin-left: -3rem;
+}
+
+#sidebar{
+    width: 7rem;
+    height: 5rem;
+    margin-top: 0.2rem;
+    display:none;
+    z-index: 1;
+    overflow:scroll;
+    background-color: chartreuse;
+    position: absolute;
+    top: 100%;
 }
 
 #sidebar::-webkit-scrollbar {
     width: 0px;
+    display: none;
 }
 
 #add, #alarm{

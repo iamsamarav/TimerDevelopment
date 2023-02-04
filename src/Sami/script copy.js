@@ -6,8 +6,7 @@ window.onload = function () {
     const btnAdd = document.getElementById('add')
     const btnSaved = document.getElementById('saved')
     const sidebar = document.getElementById('sidebar')
-
-    
+    const align = document.getElementById('align')
 
     btnStart.addEventListener('click', () => {
         const hours = document.querySelector("#hour")
@@ -70,9 +69,13 @@ window.onload = function () {
         const elementSaved = document.createElement('button')
         elementSaved.style.backgroundColor = "#34344e";
         elementSaved.style.display = "block";
+        elementSaved.style.marginTop = "0.4rem";
+        elementSaved.style.marginBottom = "0.4rem"
         elementSaved.innerHTML = `${displayhours} : ${displayminutes} : ${displayseconds}`
         sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
         i++
+        align.style.display = 'flex';
+        align.style.justifyContent = 'center';
         btnSaved.style.display = "block";
 
     })
@@ -81,7 +84,7 @@ window.onload = function () {
         sidebar.style.display = "flex"
         sidebar.style.flexDirection = "column"
         sidebar.style.alignItems = "center"
-        sidebar.style.justifyContent = "center"
+        sidebar.style.justifyContent = "flex-start"
 
     })
 
