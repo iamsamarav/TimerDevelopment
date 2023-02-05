@@ -71,13 +71,15 @@ window.onload = function () {
         elementSaved.style.display = "block";
         elementSaved.style.marginTop = "0.4rem";
         elementSaved.style.marginBottom = "0.4rem"
+        elementSaved.style.backgroundColor = 'white'
+        elementSaved.style.border = 'none'
         elementSaved.innerHTML = `${displayhours} : ${displayminutes} : ${displayseconds}`
         sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
         i++
+
         align.style.display = 'flex';
         align.style.justifyContent = 'center';
         btnSaved.style.display = "block";
-
     })
 
     btnSaved.addEventListener('click', () =>{
@@ -85,7 +87,7 @@ window.onload = function () {
         sidebar.style.flexDirection = "column"
         sidebar.style.alignItems = "center"
         sidebar.style.justifyContent = "flex-start"
-
+        
     })
 
     class timer {

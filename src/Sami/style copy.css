@@ -55,19 +55,19 @@ h1{
 #align{
     display: none;
     position: relative;
-    width: 12rem;
-    justify-content: center;
+    width: 9rem;
     margin-left: -3rem;
 }
 
 #sidebar{
     width: 7rem;
     height: 5rem;
-    margin-top: 0.2rem;
+    margin-top: 0.6rem;
     display:none;
     z-index: 1;
     overflow:scroll;
-    background-color: chartreuse;
+    background-color: #89a7b1;
+    border-radius: 1rem;
     position: absolute;
     top: 100%;
 }
@@ -77,12 +77,26 @@ h1{
     display: none;
 }
 
-#add, #alarm{
+#add{
     background-color: white;
     border: none;
     height: 4rem;
     width: 4rem;
     margin: 1rem;
+    border-radius: 2rem;
+    font-size: 2em;
+    color: #51115C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#alarm{
+    background-color: white;
+    border: none;
+    height: 4rem;
+    width: 4rem;
+    margin-right: 1.3rem;
     border-radius: 2rem;
     font-size: 2em;
     color: #51115C;

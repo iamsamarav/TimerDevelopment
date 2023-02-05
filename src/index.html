@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,40 +9,62 @@
     <script src="script.js"></script>
     <title>Timer LS</title>
 </head>
+
 <body>
-    <div class="group">
+    <header>
+        <div id="top">
+          <h1>Timer LS</h1>
+          <div>
+              <button id="add">+</button>
+              <button id="alarm"><img src="bell.png" alt=""></button>
+              <div id="align">
+                  <button id="saved"><img src="saved.png" alt=""></button>
+                  <div id="sidebar">
+                </div>
+              </div>
+          </div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <section class="display-timer">
+                <div class="input-timer">
+                    <label for="hour">Hours</label>
+                    <input type="number" name="hour" id="hour" value="00" max="99" min="0">
+                </div>
+                <div class="input-timer">
+                    <label for="minute">Minutes</label>
+                    <input type="number" name="minute" id="minute" value="00" max="59" min="0">
+                </div>
+                <div class="input-timer">
+                    <label for="second">Seconds</label>
+                    <input type="number" name="second" id="second" value="00" max="59" min="0">
+                </div>
+            </section>
 
-        <section class="align-inputs">
-            <div class="input-container">
-                <label for="hour">Hours</label>
-                <input type="number" name="" id="hour" value="00" max="99" min="0">
-            </div>
-            <div class="input-container">
-                <label for="minute">Minutes</label>
-                <input type="number" name="" id="minute" value="00" max="59" min="0">
-            </div>
-            <div class="input-container">
-                <label for="second">Seconds</label>
-                <input type="number" name="" id="second" value="00" max="59" min="0">
-            </div>
+            <section class="display-timer">
+                <span id="display-hour">00</span>
+                <span id="display-minute">00</span>
+                <span id="display-second">00</span>
+            </section>
+        </div>
 
+    </main>
+
+    <footer>
+        <section id="profiles">
+            <h2>Developed by Lílyan and Samara</h2>
+            <a href="https://www.linkedin.com/in/lilyan-guedes-9758b4208">
+                <img src="linkedin.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/samara-vit%C3%B3riaas2/">
+                <img src="linkedin.png" alt="">
+            </a>
         </section>
-
-        <div id="timer" class="timer">00:00:00</div>
-
-    </div>
-
-    <div class="btns">
-        <button class="btn-start">Start</button>
-        <button class="btn-pause">Pause</button>
-        <button class="btn-pause">Resume</button>
-        <button class="btn-pause">Cancel</button>
-
-        <footer>
-            <button class="btn-add">+</button>
-        </footer>
-    </div>
-</div>
-
+        <button id="start"><img id="img-play" src="play.png" alt=""> Start</button>
+        <button id="resume"><img id="img-play" src="play.png" alt="">Resume</button>
+        <button id="pause">||</button>
+    </footer>
 </body>
+
 </html>
