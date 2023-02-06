@@ -193,7 +193,7 @@ footer button{
     background-color: white;
     border: none;
     border-radius: 3rem;
-    width: 12rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,11 +201,16 @@ footer button{
     font-size: 1.5rem;
     color: #51115C;
     font-weight: bolder;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
 }
 
 footer button:hover{
     opacity: 90%;
+}
+
+#groupBtn {
+    display: flex;
+    margin-left: 10rem;
 }
 
 #img-play{
@@ -213,7 +218,7 @@ footer button:hover{
     margin-right: 1rem;
 }
 
-#pause{
+#pause, #cancel{
     display: none;
 }
 

@@ -7,12 +7,15 @@ window.onload = function () {
     const btnSaved = document.getElementById('saved')
     const sidebar = document.getElementById('sidebar')
     const align = document.getElementById('align')
+    const btnCancel = document.getElementById('cancel')
     let i = 0
+    
 
     btnStart.addEventListener('click', () => {
         const durationStart = getSelectTime()
         btnStart.style.display = "none"
         btnPause.style.display = "block";
+        btnCancel.style.display = "block"
         cycle = new timer(durationStart)
         cycle.cycleTimer()
     })
@@ -40,6 +43,7 @@ window.onload = function () {
         btnPause.style.display = "flex"
         cycle.cycleTimer(durationResume)
     })
+
 
     btnAdd.addEventListener('click', () => {
         const durationAdd = getSelectTime()
@@ -155,10 +159,16 @@ window.onload = function () {
                 this.timer -= 1
 
                 if (this.timer < 0) {
+                    var audio = new Audio('audio.mpeg')
+                    audio.addEventListener('canplay', function() {
+                        audio.play();
+                    });
+                    btnCancel.addEventListener('click', function(){
+                        audio.pause();
+                    })
                     clearInterval(this.interval)
                     btnResume.style.display = "none";
                     btnPause.style.display = "none";
-                    btnStart.style.display = "flex";
                 }
             }, 1000)
         }
