@@ -157,6 +157,7 @@ window.onload = function () {
                 displaySecond.innerHTML = `${seconds}`
 
                 this.timer -= 1
+                
 
                 if (this.timer < 0) {
                     var audio = new Audio('audio.mpeg')
