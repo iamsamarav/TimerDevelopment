@@ -63,7 +63,7 @@ h1{
     width: 7rem;
     height: 5rem;
     margin-top: 0.6rem;
-    display:none;
+    display: none;
     z-index: 1;
     overflow:scroll;
     background-color: #89a7b1;
