@@ -14,7 +14,7 @@ window.onload = function () {
     btnStart.addEventListener('click', () => {
         const durationStart = getSelectTime()
         btnStart.style.display = "none"
-        btnPause.style.display = "block";
+        btnPause.style.display = "flex";
         
         cycle = new timer(durationStart)
         cycle.cycleTimer()
@@ -170,7 +170,7 @@ window.onload = function () {
                         btnCancel.style.display = "none"
                     })
                     clearInterval(this.interval)
-                    btnCancel.style.display = "block"
+                    btnCancel.style.display = "flex"
                     btnResume.style.display = "none";
                     btnPause.style.display = "none";
                 }
