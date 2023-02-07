@@ -15,7 +15,7 @@ window.onload = function () {
         const durationStart = getSelectTime()
         btnStart.style.display = "none"
         btnPause.style.display = "block";
-        btnCancel.style.display = "block"
+        
         cycle = new timer(durationStart)
         cycle.cycleTimer()
     })
@@ -166,8 +166,11 @@ window.onload = function () {
                     });
                     btnCancel.addEventListener('click', function(){
                         audio.pause();
+                        btnStart.style.display = "flex"
+                        btnCancel.style.display = "none"
                     })
                     clearInterval(this.interval)
+                    btnCancel.style.display = "block"
                     btnResume.style.display = "none";
                     btnPause.style.display = "none";
                 }
