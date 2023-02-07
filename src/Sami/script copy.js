@@ -22,6 +22,22 @@ window.onload = function () {
         cycle.cycleTimer()
     })
 
+    btnRefresh.addEventListener('click', () =>{
+        let intervalRefresh = cycle.getInterval()
+        clearInterval(intervalRefresh)
+
+        let displayHour = document.querySelector("#display-hour")
+        let displayMinute = document.querySelector("#display-minute")
+        let displaySecond = document.querySelector("#display-second")
+
+        displayHour.innerHTML = "00"
+        displayMinute.innerHTML = "00"
+        displaySecond.innerHTML = "00"
+
+        btnPause.style.display = "none"
+        btnRefresh.style.display = "none"
+        btnStart.style.display = "flex"
+    })
 
     btnPause.addEventListener('click', () => {
         let interval = cycle.getInterval()
