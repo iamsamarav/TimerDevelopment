@@ -217,11 +217,6 @@ footer button:hover{
     width: 2.5rem;
 }
 
-#pause, #cancel{
+#pause, #cancel, #resume, #refresh{
     display: none;
 }
-
-#resume{
-    display: none;
-}
-

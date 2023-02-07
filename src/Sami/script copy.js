@@ -8,17 +8,20 @@ window.onload = function () {
     const sidebar = document.getElementById('sidebar')
     const align = document.getElementById('align')
     const btnCancel = document.getElementById('cancel')
+    const btnRefresh = document.getElementById('refresh')
     let i = 0
     
 
     btnStart.addEventListener('click', () => {
         const durationStart = getSelectTime()
         btnStart.style.display = "none"
-        btnPause.style.display = "flex";
+        btnPause.style.display = "flex"
+        btnRefresh.style.display = "flex"
         
         cycle = new timer(durationStart)
         cycle.cycleTimer()
     })
+
 
     btnPause.addEventListener('click', () => {
         let interval = cycle.getInterval()
@@ -173,6 +176,7 @@ window.onload = function () {
                     btnCancel.style.display = "flex"
                     btnResume.style.display = "none";
                     btnPause.style.display = "none";
+                    btnRefresh.style.display = "none"
                 }
             }, 1000)
         }
