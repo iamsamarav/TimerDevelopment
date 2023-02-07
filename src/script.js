@@ -11,7 +11,6 @@ window.onload = function () {
     const btnRefresh = document.getElementById('refresh')
     let i = 0
     
-
     btnStart.addEventListener('click', () => {
         const durationStart = getSelectTime()
         btnStart.style.display = "none"
@@ -62,7 +61,6 @@ window.onload = function () {
         btnPause.style.display = "flex"
         cycle.cycleTimer(durationResume)
     })
-
 
     btnAdd.addEventListener('click', () => {
         const durationAdd = getSelectTime()
@@ -192,7 +190,6 @@ window.onload = function () {
 
                 this.timer -= 1
                 
-
                 if (this.timer < 0) {
                     var audio = new Audio('assets/audio.mpeg')
                     audio.addEventListener('canplay', function() {

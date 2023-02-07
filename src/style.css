@@ -13,7 +13,7 @@ body{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/* HEADER */
+
 header{
     display: flex;
     flex-direction: column;
@@ -113,8 +113,6 @@ header img{
     width: 2rem;
 }
 
-/* MAIN */
-
 main{
     grid-row: 2/3;
     display: flex;
@@ -160,8 +158,6 @@ input{
     border-radius: 2rem;
     padding: 1rem;
 }
-
-/* FOOTER */
 
 footer{
     grid-row: 3/4;
