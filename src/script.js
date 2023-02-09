@@ -9,7 +9,7 @@ window.onload = function () {
     const align = document.getElementById('align')
     const btnCancel = document.getElementById('cancel')
     const btnRefresh = document.getElementById('refresh')
-    let i = 0
+    let i = 1
     
     btnStart.addEventListener('click', () => {
         const durationStart = getSelectTime()
@@ -77,14 +77,14 @@ window.onload = function () {
         elementSaved.style.width = '100%'
         elementSaved.style.border = 'none'
         elementSaved.innerHTML = `${displayHours} : ${displayMinutes} : ${displaySeconds}`
+        sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
+        elementSaved.setAttribute("id", i.valueOf())
+        i++
         let listChild = Array.from(sidebar.childNodes)
         const result = listChild.filter(element => element.textContent == elementSaved.textContent)
         listChild = listChild.filter((n) => {
             return !result.includes(n)
         })
-        sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
-        elementSaved.setAttribute("id", i.valueOf())
-        i++
         sidebar.childNodes.forEach((element) => {
             let ind = 0
             if(element.textContent==result[ind].textContent) {
@@ -93,7 +93,10 @@ window.onload = function () {
             } else {
                 ind = ind
             }
-        }) 
+        })
+        sidebar.insertBefore(elementSaved, sidebar.childNodes[i])
+        listChild.push(elementSaved)
+        listChild.forEach((element) => console.log(element))
        
         align.style.display = 'flex';
         align.style.justifyContent = 'center';
