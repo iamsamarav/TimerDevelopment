@@ -20,6 +20,8 @@ header{
     justify-content: space-between;
     align-items: flex-end;
     grid-row: 1/2;
+    width: 100%;
+    flex-direction: row;
 }
 
 #saved {
@@ -40,14 +42,7 @@ h1{
     padding: 1rem;
 }
 
-#top{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: row;
-}
-
-#top>div {
+header>div {
     display: flex;
     align-items: center;
 }
