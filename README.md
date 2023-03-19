@@ -32,9 +32,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
         </sub>
       </a>
     </td>
-  </tr>
-  
-    <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/lilyan-guedes/">
         <img src="https://media.licdn.com/dms/image/D4D03AQEIOel6LBwYUQ/profile-displayphoto-shrink_200_200/0/1679143057736?e=1684972800&v=beta&t=wBh_oSE_xLtxOh6ZByyJKb136sAshD_KKOaH4VeeOdA" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
