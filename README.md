@@ -46,6 +46,4 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 ## 📝 Licença
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
-
-[⬆ Voltar ao topo](#Projeto-Integrador---no-controle)<br>
  
