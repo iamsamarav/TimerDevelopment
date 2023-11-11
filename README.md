@@ -26,7 +26,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
   <tr>
     <td align="center">
       <a href="https://www.linkedin.com/in/iamsamarav/">
-        <img src="https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_200_200/0/1669081570828?e=1684368000&v=beta&t=zaSdLyYijQJM1GqY4fcNpXRj85OjXTNllaORI_UI2Bk" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://media.licdn.com/dms/image/D4D03AQFPNXrqXphbrQ/profile-displayphoto-shrink_800_800/0/1669081572244?e=1704931200&v=beta&t=Xvfb8Tb8G6Qu1EWDKc10AQgMeyukiXRX_PHL2KK_cr8" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
           <b>Samara Vitória</b>
         </sub>
@@ -34,7 +34,7 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
     </td>
     <td align="center">
       <a href="https://www.linkedin.com/in/lilyan-guedes/">
-        <img src="https://media.licdn.com/dms/image/D4D03AQEIOel6LBwYUQ/profile-displayphoto-shrink_200_200/0/1679143057736?e=1684972800&v=beta&t=wBh_oSE_xLtxOh6ZByyJKb136sAshD_KKOaH4VeeOdA" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
+        <img src="https://media.licdn.com/dms/image/D4D03AQFIzklHgXy1tA/profile-displayphoto-shrink_200_200/0/1696707175406?e=1704931200&v=beta&t=VQ2qW_51iunqlUPPtuu9RE97C_k0hmjk4R1VgB7Szrk" width="100px;" alt="Foto do Iuri Silva no GitHub"/><br>
         <sub>
           <b>Lílyan Guedes</b>
         </sub>
